@@ -1,0 +1,19 @@
+.app__content{
+    font-size: 1rem;
+    font-family: var(--font-alt);
+    line-height: 1.5;
+}
+.quote{
+   
+    font-size: 15px;
+    margin: 1rem ;
+    text-align: center;
+    background: var(--color-grey);
+    padding: 1 rem;
+    line-height: 1rem;
+    font-family: var(--head-font);
+}
+.button-link{
+    text-align: center;
+    margin-bottom: 1rem;
+}

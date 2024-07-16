@@ -1,0 +1,170 @@
+.slider {
+  width: 100%;
+  height: 90vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.slide{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transform: translateX(-50%);
+  transition: all .5s ease;
+}
+
+@media screen and (min-width:600px) {
+  .slide img{
+    width: 100%;
+    height: 100%;
+  }
+  
+}
+
+
+@media screen and (max-width:600px) {
+  .slide img{
+    width: 100%;
+    height: 100%;
+  }
+  
+}
+
+  .slide img{
+   
+    height: 100%;
+  }
+
+
+.content{
+  position: absolute;
+  top: 13rem;
+  left: 5rem;
+  opacity: 0;
+  width: 50%;
+  padding: 3rem;
+  background: rgba(0, 0, 0, 0.3);
+  animation: slide-up is ease 0.5s;
+  animation-fill-mode: forwards;
+  /* visibility: hidden; */
+}
+
+@keyframes slide-up {
+  0% {
+    visibility: visible;
+    top: 23rem;
+  }
+  
+  100%{
+    visibility: visible;
+
+    top: 13rem;
+
+  }
+}
+@media screen and (max-width:600px) {
+
+  .content{
+  width: 60%;
+
+}
+
+  
+}
+
+@media screen and (max-width:750px) {
+  .content{
+  position: absolute;
+  top: 5rem;
+  left: 5rem;
+  width: 50%;
+  padding: 0;
+} 
+}
+
+@media screen and (max-width:350px) {
+  .content {
+  position: absolute;
+  top: 1.5rem;
+  left: 5rem;
+  border-radius: 4px;
+  padding: 0;
+} 
+
+  .content h2 {
+
+  font-size:1rem ;
+  margin-bottom: 0;
+} 
+
+  .content p {
+
+  font-size:0.5rem ;
+} 
+
+.arrow{
+  border-radius: 50%;
+  background-color: transparent;
+  color: #fff;
+  width: 2rem;
+  height: 2rem;
+  cursor: pointer;
+  position: absolute;
+  z-index: 999;
+  top: 5rem;
+}
+}
+
+
+.content > *{
+  color: #fff;
+  margin-bottom: 1rem;
+}
+
+
+.current {
+  opacity: 1;
+  transform: translateX(0)
+
+}
+
+
+.current .content {
+  opacity: 1;
+ 
+
+}
+
+.arrow{
+  background-color: transparent;
+  color: #fff;
+  width: 2rem;
+  height: 2rem;
+  cursor: pointer;
+  position: absolute;
+  z-index: 99;
+  top: 35%;
+}
+
+.arrow:hover{
+  background: #fff;
+  color: #777;
+}
+.next{
+  
+  right: 1.5rem;
+}
+
+.prev{
+  
+  left: 1.5rem;
+}
+
+hr{
+  height: 2px;
+  background: #fff;
+  width: 50%;
+}
